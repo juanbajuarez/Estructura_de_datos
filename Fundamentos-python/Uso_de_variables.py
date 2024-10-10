@@ -34,7 +34,7 @@ print("Altura: ", altura, "m.")
 print("Edad: ", edad, "años.")
 
 # En Python, las variables son dinámicas, por lo que pueden almacenar otro tipo de dato en cualquier momento
-edad = "treinta y uno"      # edad antes tenía el valor de 31 (Int)
+edad = "Veinti cinco"      # edad antes tenía el valor de 31 (Int)
 print()
 print("Edad (con otro tipo de dato):", edad)
 
@@ -50,7 +50,7 @@ print("Edad (con otro tipo de dato):", edad)
 # - Utilizar nombres descriptivos de acuerdo a su uso. Por ejemplo: edad, en lugar de e.
 
 # Ejemplos correctos y con buenas prácticas
-fecha_nacimiento = "1 de enero del 2000"
+fecha_nacimiento = "27 de diciembre de 1999"
 clase = "Estructuras de Datos"
 horas_estudio = 8
 nombre = "Juan"
@@ -58,7 +58,7 @@ es_estudiante = True
 
 # Ejemplos incorrectos (líneas comentadas porque marcan error) o de malas prácticas
 f = "1 de enero del 2000"
-fechanacimiento = "1 de enero del 2000"
+fechanacimiento = "27 de diciembre de 1999"
 # class = "Estructuras de Datos"
 # 8horas_estudio = 8
 Nombre = "J U  A  N"
