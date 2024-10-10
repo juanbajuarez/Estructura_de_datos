@@ -57,7 +57,7 @@ nombre = "Juan"
 es_estudiante = True
 
 # Ejemplos incorrectos (líneas comentadas porque marcan error) o de malas prácticas
-f = "1 de enero del 2000"
+f = "27 de diciembre de 1999"
 fechanacimiento = "27 de diciembre de 1999"
 # class = "Estructuras de Datos"
 # 8horas_estudio = 8
@@ -71,3 +71,4 @@ print("Variable nombre:", nombre)
 print("Variable Nombre:", Nombre)
 print("Variable NOMBRE:", NOMBRE)
 print("Hola")
+print()
