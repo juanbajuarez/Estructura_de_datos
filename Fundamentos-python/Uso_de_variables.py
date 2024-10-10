@@ -1,4 +1,4 @@
-# Alberto Martínez Barbosa
+# Juan bautista juarez
 # 7 de septiembre de 2024
 # En este archivo se ejemplifica el uso de variables en Python.
 
@@ -70,3 +70,4 @@ print("Las variables son sensibles a mayúsculas y minúsculas:")
 print("Variable nombre:", nombre)
 print("Variable Nombre:", Nombre)
 print("Variable NOMBRE:", NOMBRE)
+print("Hola")
