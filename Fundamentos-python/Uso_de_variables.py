@@ -13,24 +13,24 @@ semestre = 4        # la variable ya no apunta al objeto anterior, sino a uno nu
 print(semestre)
 
 # Se crean varias variables para ejemplificar su uso
-nombre = "Alberto"  # variable de tipo String
-altura = 1.65       # variable de tipo Float
-edad = 31           # variable de tipo Int
+nombre = "Juan"  # variable de tipo String
+altura = 1.78       # variable de tipo Float
+edad = 24           # variable de tipo Int
 
 # Se imprimen las variables, añadiendo información adicional para comprender lo que se imprime
 print("Nombre:", nombre)
 print("Semestre:", semestre)
-print("Altura: ", altura, "cm.")
+print("Altura: ", altura, "m.")
 print("Edad: ", edad, "años.")
 
 # Se modifican los valores de las variables y se mandan a imprimir
-altura = 1.66
-edad = 30
+altura = 1.80
+edad = 25
 print()
 print("Valores modificados:")
 print("Nombre:", nombre)
 print("Semestre:", semestre)
-print("Altura: ", altura, "cm.")
+print("Altura: ", altura, "m.")
 print("Edad: ", edad, "años.")
 
 # En Python, las variables son dinámicas, por lo que pueden almacenar otro tipo de dato en cualquier momento
@@ -53,7 +53,7 @@ print("Edad (con otro tipo de dato):", edad)
 fecha_nacimiento = "1 de enero del 2000"
 clase = "Estructuras de Datos"
 horas_estudio = 8
-nombre = "Alberto"
+nombre = "Juan"
 es_estudiante = True
 
 # Ejemplos incorrectos (líneas comentadas porque marcan error) o de malas prácticas
@@ -61,8 +61,8 @@ f = "1 de enero del 2000"
 fechanacimiento = "1 de enero del 2000"
 # class = "Estructuras de Datos"
 # 8horas_estudio = 8
-Nombre = "A l b e r t o"
-NOMBRE = "ALBERTO"
+Nombre = "J U  A  N"
+NOMBRE = "JUAN"
 
 # Notar que las variables 'nombre', 'Nombre' y 'NOMBRE', son distintas
 print()
