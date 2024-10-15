@@ -72,3 +72,8 @@ print("Variable Nombre:", Nombre)
 print("Variable NOMBRE:", NOMBRE)
 print("Hola")
 print()
+
+
+
+
+numero.
