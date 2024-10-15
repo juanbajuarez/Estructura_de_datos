@@ -1,5 +1,5 @@
 # Juan bautista juarez
-# 7 de septiembre de 2024
+# 7 de octubre de 2024
 # En este archivo se ejemplifica el uso de variables en Python.
 
 # Notas:
@@ -50,30 +50,23 @@ print("Edad (con otro tipo de dato):", edad)
 # - Utilizar nombres descriptivos de acuerdo a su uso. Por ejemplo: edad, en lugar de e.
 
 # Ejemplos correctos y con buenas prácticas
-fecha_nacimiento = "27 de diciembre de 1999"
+fecha_nacimiento = "27 de diciembre de 1999" #El nombre de los identificadores debe hacer clara referencia al dato que guarda.
 clase = "Estructuras de Datos"
 horas_estudio = 8
 nombre = "Juan"
 es_estudiante = True
 
 # Ejemplos incorrectos (líneas comentadas porque marcan error) o de malas prácticas
-f = "27 de diciembre de 1999"
+f = "27 de diciembre de 1999" #no reclarar variasbles con una sola letra como identificador
 fechanacimiento = "27 de diciembre de 1999"
-# class = "Estructuras de Datos"
-# 8horas_estudio = 8
+# class = "Estructuras de Datos"  #No utilzar palabras reservadas como identificadores
+# 8horas_estudio = 8             #No iniciar identificadores con numero
 Nombre = "J U  A  N"
 NOMBRE = "JUAN"
 
 # Notar que las variables 'nombre', 'Nombre' y 'NOMBRE', son distintas
-print()
+print()                             #Imprime un salto de linea
 print("Las variables son sensibles a mayúsculas y minúsculas:")
 print("Variable nombre:", nombre)
 print("Variable Nombre:", Nombre)
 print("Variable NOMBRE:", NOMBRE)
-print("Hola")
-print()
-
-
-
-
-numero.

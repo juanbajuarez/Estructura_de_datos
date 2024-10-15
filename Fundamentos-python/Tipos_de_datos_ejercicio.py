@@ -1,6 +1,6 @@
 '''
 Juan Bautista Juarez
-7 de septiembre de 2024.
+7 de octubre de 2024.
 Descripción:
 Ejercicios para comprender y ejempleficar los tipos de datos en Python.
 '''
@@ -15,7 +15,7 @@ print("Dia: ",Dia)                      #se imprime una cadena
 print("Pasaje: ",Pasaje)                #se imprime un entero
 print("Comida: ",Comida)                #se imprime un flotante
 print("Otros gastos: ",Otros_Gastos)    #se imprime un flotante
-print("¿Fue mayor a mi presupuesto?",Presupuesto) #se imprime un flotante
+print("¿Fue mayor a mi presupuesto?",Presupuesto) #se imprime un boleano
 
 
 # Se repite el coidgo con distintos datos

@@ -1,6 +1,6 @@
 '''
 Juan Bautista Juarez
-7 de septiembre de 2024.
+7 de octubre de 2024.
 Descripción:
 Usos de los tipos básico de datos en Python.
 Se muestran los distintos tipos de datos y como se declaran
