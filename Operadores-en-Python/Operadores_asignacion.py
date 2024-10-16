@@ -33,6 +33,7 @@ numero11,numero10=numero10,numero11
 print(numero10)
 print(numero11)
 
+#Entrada multiple de valores
 
 nombre,apellido=input("nombre: "),input("apellido: ")
 print(nombre)
