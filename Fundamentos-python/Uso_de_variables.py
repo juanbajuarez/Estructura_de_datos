@@ -1,6 +1,7 @@
 # Juan bautista juarez
 # 7 de septiembre de 2024
 # En este archivo se ejemplifica el uso de variables en Python.
+from xmlrpc.client import boolean
 
 # Notas:
 # En Python todo es un objeto.
@@ -72,8 +73,3 @@ print("Variable Nombre:", Nombre)
 print("Variable NOMBRE:", NOMBRE)
 print("Hola")
 print()
-
-
-
-
-numero.
