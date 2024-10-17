@@ -7,4 +7,4 @@ from compileall import compile_pat
 #el numero { } esta entre 10 y 15
 
 numero=input("ingrese un numero")
-print(f)
+print(f)ffds
