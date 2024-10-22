@@ -1,9 +1,8 @@
-# Juan bautista Juarez
-# 16  de octubre  de 2024
+# Juan Bautista Juarez
+# 16  de Octubre  de 2024
 # Operadores aritmeticos compuestos en Python
 
-
-
+#Entrada por consola de dos numeros enteros.
 numero1,numero2=input("Ingrese el primer numero: "),input("Ingrese el segundo numero: ")
 numero1=int(numero1)
 numero2=int(numero2)
@@ -17,10 +16,11 @@ print(numero1)
 print(numero2)
 
 
+#Entrada por consola de dos numeros enteros.
 numero1,numero2=input("Ingrese el primer numero: "),input("Ingrese el segundo numero: ")
 numero1=int(numero1)
 numero2=int(numero2)
-
+#Ejemplo utilizando los valores pedidos por consola
 numero1+=numero2
 numero1*=numero1
 numero1-=numero2

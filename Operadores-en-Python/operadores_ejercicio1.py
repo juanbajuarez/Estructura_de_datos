@@ -1,10 +1,10 @@
-# Juan bautista Juarez
-# 17  de octubre  de 2024
-# Ejercicios de operadores
-from compileall import compile_path
+# Juan Bautista Juarez
+# 17  de Octubre  de 2024
+# Ejercicio número 1 de operadores en Python. Este programa indica si el usuario es
+# acreedor a una bonificacion siempre y cuando cumpla dos condiciones, que su compra sea mayor o igual
+# a 5000 y sea a meses sin intereses.
 
-compras=input("Ingrese la cantidad gastada en las compras:")
+compras=float(input("Ingrese la cantidad gastada en las compras:"))
 cadena1= input("Las compras fueron a meses sin interes si o no: ")
 cadena1=cadena1.lower()=="si"
-cadena1=bool(cadena1)
-print(f"¿Aplica a bonificacion?,{cadena1 and descuento }")
+print(f"¿Aplica a bonificacion?{cadena1 and compras>=5000 }")
