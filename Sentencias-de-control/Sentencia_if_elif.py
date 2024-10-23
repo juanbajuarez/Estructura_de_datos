@@ -21,6 +21,6 @@ elif edad>=15 and edad<=25:
 elif edad>=26 and edad<=45:
     print("Adultos jovenes")
 elif edad>=46 and edad<=60:
-    print("Adultos maduros")
+    print("Adulto maduro")
 else:
     print("Adultos mayores")
