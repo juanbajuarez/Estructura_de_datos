@@ -1,6 +1,6 @@
-# Juan bautista Juarez
-# 21  de octubre  de 2024
-# Sentencias de control en if-else Python
+# Juan Bautista Juárez.
+# 28 de octubre de 2024.
+# Sentencias de control if-else en Python.
 
 """
 La sentencia if-else es una estructura de control fundamental que permite tomar decisiones en el código.
@@ -19,12 +19,11 @@ else:
 
 # Ejemplo en donde se determina si un número es par o impar.
 print("  ***  Programa que determina si un número es par o impar  ***")
-numero = int(input("Ingresa un número: "))  # Solicitamos el número
+numero = int(input("Ingresa un número: "))  # Solicitamos un número entero
 
-# lógica para determinar si es par o impar
+# Lógica para determinar si el número ingresado es par o impar.
 print()
-if numero % 2 == 0:  # Implica que es par
+if numero % 2 == 0:  # Condición que implica que el número es par.
     print("El número es par.")
-
 else:
-    print("El número es impar.")  # Implica que es impar
+    print("El número es impar.")  # Condición que implica que el número es impar.
