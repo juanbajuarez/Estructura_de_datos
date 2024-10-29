@@ -21,4 +21,4 @@ while contador<=5:
     else:
         print()
     if contador==6:
-        print("Numero no adivinado")
+        print("*** Numero no adivinado ***")
