@@ -2,23 +2,22 @@
 # 16  de Octubre  de 2024
 # Operadores logicos en Python
 
-#Entrada por consola de una cadena
+"""
+Los operadores lógicos permiten combinar expresiones booleanas (verdadero o falso) para crear condiciones más complejas.
+Estos operadores nos permiten realizar operaciones lógicas como "y", "o" y "no", lo que nos da la capacidad de tomar
+decisiones más sofisticadas dentro de nuestros programas.
+"""
 
-cadena1= input("ingrese si o no: ")
-cadena2= input("ingrese si o no: ")
-#Conversion de la cadena a minusculas y a un valor booleano
-cadena1=cadena1.lower()=="si"
-cadena2=cadena2.lower()=="si"
-cadena3=bool(cadena1)
-cadena4=bool(cadena2)
-print(cadena3)
-print(cadena4)
-#Se aplica el algebra de bool
-print(f"¿Ambas fueron si,{cadena3 and cadena4}") #Or devuelve un true si y solo si las dos
-# variables son verdaderas.
-print(f"¿Ambas fueron iguales,{cadena3 or cadena4}") #Or devuelve un true si al menos una de las dos
-# variables es verdaderas.
-print(f"¿La negacion de cadena 1,{not cadena3}")#Retorna la negacion de la variable.
-print(f"¿La negacion de cadena 2,{not cadena4}")
+# Se solicita por consola que se ingresen dos valores (Si/No) para covnertirlas a expresiones booleanas.
+expresion1 = input("Ingresa un valor (Si/No): ")
+expresion2 = input("Ingresa otro valor (Si/No): ")
 
+# Las cadenas se convierten a expresiones booleanas (ver Fundamentos-Python -> Entrada_conversiones.py).
+expresion1 = expresion1.lower() == "si"
+expresion2 = expresion2.lower() == "si"
 
+# Se imprimen mensajes sobre operaciones lógicas.
+print(f"¿Ambas expresiones fueron 'si'? {expresion1 and expresion2}")
+print(f"¿Alguna expresión fue 'si'? {expresion1 or expresion2}")
+print(f"Lo contrario de la primera expresión es: {not expresion1}")
+print(f"Lo contrario de la segundo expresión es: {not expresion2}")
