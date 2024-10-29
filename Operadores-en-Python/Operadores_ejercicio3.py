@@ -1,5 +1,5 @@
 # Juan Bautista Juárez.
-# 17 de octubre de 2024.
+# 28 de octubre de 2024.
 # Ejercicio número 3 de operadores en Python. Este programa validará el usuario
 # y la contraseña ingresados por el usuario.
 

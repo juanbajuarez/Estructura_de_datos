@@ -1,5 +1,5 @@
 # Juan Bautista Juárez.
-# 17 de octubre de 2024.
+# 28 de octubre de 2024.
 # Ejercicio número 4 de operadores en Python.
 # Este programa analizará valores booleanos y dirá si la expresión se cumple
 # según los datos de entrada.
