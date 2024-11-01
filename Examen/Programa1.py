@@ -1,5 +1,5 @@
 """
-Programa 1 del examen
+Programa  1 del examen
 """
 
 from random import *
