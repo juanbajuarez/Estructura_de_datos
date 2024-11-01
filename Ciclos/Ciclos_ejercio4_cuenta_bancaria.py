@@ -1,7 +1,7 @@
 # Juan bautista Juarez
 # 29  de octubre  de 2024
 #Ciclo while en Python
-#Cuenta de banco
+#Cuenta de banco 1
 
 print("PROGRAMA DE GESTION BANCARIA")
 print("*** Bienvenido al Banco azteca ***")

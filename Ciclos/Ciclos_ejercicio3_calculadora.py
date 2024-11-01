@@ -1,7 +1,7 @@
 # Juan bautista Juarez
 # 29  de octubre  de 2024
 #Ciclo while en Python
-#Calculadora en Python
+#Calculadora en Python 1
 
 print("*** Calculadora Básica ***")
 
