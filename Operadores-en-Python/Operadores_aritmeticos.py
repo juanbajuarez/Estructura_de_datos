@@ -1,21 +1,43 @@
-# Juan Bautista Juarez
-# 15  de Octubre  de 2024
-# Operadores aritmeticos en Python
+# Juan Bautista Juárez.
+# 28 de octubre de 2024.
+# Operadores aritméticos en Python.
 
-#Se solita la entrada de dos numeros por consala.
-numero1=input("Ingrese el primer numero: ")
-numero2=input("Ingrese el segundo numero: ")
-#se convierten a enteros
-numero1=int(numero1)
-numero2=int(numero2)
-#Se realizan las operaciones comunes.
-print("Suma:",numero1+numero2) #suma.
-print("Resta:",numero1-numero2) #Resta.
-print("Multiplicacaion:",numero1*numero2) #Multiplicacion.
-print("Division",numero1/numero2) #Division
-print("Modulo:",numero1%numero2) #Modulo
+"""
+Los operadores aritméticos en Python son los siguientes:
+- Suma (+).
+- Resta (-).
+- Multiplicación (*).
+- División (/).
+- División entera (//).
+- Módulo (%).
+- Exponenciación (**).
+"""
 
-print("Doble:",numero1//numero2)#Expresion que retorna solo el valor entero
-# de una division.
-print("Doblemultiplicaion:",numero1**numero2) #Expresion para elevar el primer
-# numero a la potencia del segundo numero.
+# Se solicitan dos números enteros al usuario.
+numero1 = int(input("Ingresa un número entero: "))
+numero2 = int(input("Ingresa otro número entero: "))
+
+# Se realizan las operaciones aritméticas.
+print()
+print("  ***   Ejemplos de uso de los operadores aritméticos   ***")
+
+# Expresión de suma dentro del print, dándole formato (f) al código de impresión.
+print(f"La suma de ({numero1} + {numero2}) es: {numero1 + numero2}.")
+
+# Expresión de resta dentro del print, dándole formato (f) al código de impresión.
+print(f"La resta de ({numero1} - {numero2}) es: {numero1 - numero2}.")
+
+# Expresión de multiplicación dentro del print, dándole formato (f) al código de impresión.
+print(f"La multiplicación de ({numero1} * {numero2}) es: {numero1 * numero2}.")
+
+# Expresión de división dentro del print, dándole formato (f) al código de impresión.
+print(f"La división de ({numero1} / {numero2}) es: {(numero1 / numero2):.2f}.")    # Notar la forma para mostrar dos decimales.
+
+# Expresión de división entera dentro del print, dándole formato (f) al código de impresión.
+print(f"La división entera de ({numero1} // {numero2}) es: {numero1 // numero2}.")
+
+# Expresión del módulo dentro del print, dándole formato (f) al código de impresión.
+print(f"El módulo de ({numero1} % {numero2}) es: {numero1 % numero2}.")
+
+# Expresión de exponenciación dentro del print, dándole formato (f) al código de impresión.
+print(f"La exponenciación de ({numero1} ** {numero2}) es: {numero1 ** numero2}.")
