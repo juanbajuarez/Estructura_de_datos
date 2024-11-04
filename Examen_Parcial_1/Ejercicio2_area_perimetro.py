@@ -2,12 +2,12 @@
 Programa 2 del examen.
 """
 import math
-print("*** Programa que calcula área y perímetro ***")
+
 
 opcion = 10
 
 while opcion != 0:
-    print()
+    print("*** Programa que calcula área y perímetro ***")
     print("Menú de operaciones")
     print("[1] Área de un rectángulo")
     print("[2] Perímetro de un rectángulo")
@@ -49,4 +49,5 @@ while opcion != 0:
         print("Opción inválida")
 
     print("*******************************")
+    print()
 
