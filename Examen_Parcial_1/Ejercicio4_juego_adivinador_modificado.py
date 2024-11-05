@@ -1,7 +1,6 @@
 """
 Programa 4 del examen modificado.
 """
-from optparse import Option
 from random import randint
 
 

@@ -13,7 +13,7 @@ while opcion != "0":
     numero = random.randint(1, 3)
     print()
     print(f"Victorias del jugador: {jugador}, Empates: {empate}, Victorias del CPU: {cpu_victorias}")
-    print("Elije Piedra, Papel ó Tijera")
+    print("Elije Piedra, Papel ó Tijera:")
     print("[0] Salir")
     opcion=(input("Opción: "))
     opcion=opcion.lower()
