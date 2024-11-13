@@ -16,12 +16,12 @@ print(alumnos[1])
 alumnos.insert(1,"Tania")
 for alumno in alumnos:
     print(alumno,end=" ")
-alumnos.remove("Hector") #Para remover segun su valor
+alumnos.remove("Hector") #Para remover según su valor
 print()
 print(alumnos)
-alumnos.pop(2) #Para remover por indice
+alumnos.pop(2) #Para remover por índice
 print(alumnos)
-del alumnos[2] #Para remover por indice
+del alumnos[2] #Para remover por índice
 print(alumnos)
 
 alumnos2=["Addy","Alberto","Bryan","Galilea","Hector","Jennifer","Juan","Louderes","Patricia","Rebeca","Rosalinda","Tania"]
