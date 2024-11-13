@@ -9,6 +9,6 @@ numero=int(numero)
 contador=0
 acumulador=0
 while contador<=numero:
-acumulador+=contador
-contador+=1
+    acumulador+=contador
+    contador+=1
 print(f"La suma de 0 hasta {numero} es: {acumulador} ")
