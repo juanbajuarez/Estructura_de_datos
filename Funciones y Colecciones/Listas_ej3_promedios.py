@@ -26,12 +26,17 @@ while opcion!=0:
     opcion = int(input("Indique que accion desea realizar: "))
     if opcion==1:
         posicion=int(input("Indique la posicion de alumnos para mostrar sus datos: "))
-        print("Nombre      ",alumnos[posicion-1])
-        print("Estructura D",estructura_datos[posicion-1])
-        print("Derecho     ",derecho[posicion-1])
-        print("Contabilidad",contabilidad[posicion-1])
-        print("Electronica ",electronica[posicion-1])
-        print("Algebra     ",algebra[posicion-1])
+        if cantidad_alumnos==0:
+            print("Lista vacia")
+        elif posicion<cantidad_alumnos:
+            print("Nombre      ",alumnos[posicion-1])
+            print("Estructura D",estructura_datos[posicion-1])
+            print("Derecho     ",derecho[posicion-1])
+            print("Contabilidad",contabilidad[posicion-1])
+            print("Electronica ",electronica[posicion-1])
+            print("Algebra     ",algebra[posicion-1])
+        else:
+            print("El alumno no existe")
     elif opcion==2:
         print(alumnos)
         print(promedio)
@@ -55,12 +60,18 @@ while opcion!=0:
 
     elif opcion == 4:
         posicion = int(input("Indique la posicion de alumnos para eliminarlo: "))
-        del alumnos[posicion-1]
-        del estructura_datos[posicion-1]
-        del derecho[posicion-1]
-        del contabilidad[posicion-1]
-        del electronica[posicion-1]
-        del algebra[posicion-1]
+        if posicion<= cantidad_alumnos:
+            del alumnos[posicion-1]
+            del estructura_datos[posicion-1]
+            del derecho[posicion-1]
+            del contabilidad[posicion-1]
+            del electronica[posicion-1]
+            del algebra[posicion-1]
+            cantidad_alumnos-=1
+        else:
+            print("no hay mas alumnos")
     else:
         promedioG=sum(promedio)/cantidad_alumnos
         print(f"El promedio grupal es: {promedioG}")
+    print("***************************************")
+print("Programa Finalizado")

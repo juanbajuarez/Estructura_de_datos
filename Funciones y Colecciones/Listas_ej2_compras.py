@@ -10,7 +10,7 @@ def menu():
     print("[0] Salir")
 
 print("***Lista de compras***")
-opcion=1
+opcion=None
 nombre_productos = []
 cantidad_productos=[]
 cantidad_t= 0
@@ -18,15 +18,30 @@ while opcion!=0:
         menu()
         opcion = int(input("Indique que accion desea realizar: "))
         if opcion==1:
-            print(nombre_productos)
-            print(cantidad_productos)
+            if cantidad_t==0:
+                print("No hay productos")
+            else:
+                print(nombre_productos)
+                print(cantidad_productos)
         elif opcion==2:
             nombre_producto=input("Ingrese el nombre del producto: ")
             cantidad_producto=input("Ingrese la cantidad: ")
             nombre_productos.append(nombre_producto)
             cantidad_productos.append(cantidad_producto)
             cantidad_t+=1
+        elif opcion==3:
+            eliminar=input("Ingrese el nombre del producto que desea eliminar: ")
+            if cantidad_t==0:
+                print("No hay productos")
+            for i in range(cantidad_t):
+                if nombre_productos[i]==eliminar:
+                    print(f"Poducto eliminado: {eliminar}")
+                    nombre_productos.pop(i)
+                    cantidad_productos.pop(i)
+                    cantidad_t-=1
+                    break
+                if i==cantidad_t:
+                    print("Producto no existente")
         else:
-            del nombre_productos[cantidad_t-1]
-            del cantidad_productos[cantidad_t-1]
+            print("Programa Finalizado")
         print("************************************")
