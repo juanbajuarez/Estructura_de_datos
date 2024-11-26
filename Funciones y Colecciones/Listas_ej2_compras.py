@@ -1,6 +1,6 @@
 # Autor: Juan Bautista Juárez
 # Fecha: Noviembre de 2024
-# Descripción: Programa en Python que utiliza funciones
+# Descripción: Programa en Python que utiliza funciones con listas
 # para implementar una lista de compras.
 
 #Función que muestra el menú
