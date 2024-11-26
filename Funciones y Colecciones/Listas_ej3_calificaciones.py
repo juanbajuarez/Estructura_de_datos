@@ -57,7 +57,7 @@ def promedio_grupal(alumnos):
     promedio_grupal=acumulador/tam
     print(f"El promedio grupal del Parcial 1: {promedio_grupal:.1f}")
 
-#Función para agrgar un nuevo alumno
+#Función para agregar un nuevo alumno.
 def agregar_alumno(alumnos):
     nombre = input("Ingrese el nombre del alumno: ")
     print("Ingrese las calificaciones del alumno:")
