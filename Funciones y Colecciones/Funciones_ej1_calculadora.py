@@ -1,9 +1,10 @@
-# Juan bautista Juarez
-# 25  de octubre  de 2024
-# Calculadora con funciones
+# Autor: Juan Bautista Juárez
+# Fecha: Noviembre de 2024
+# Descripción: Programa en Python que utiliza funciones y ciclo
+# While para implementar una calculadora.
 
 
-#Declaracion y diseño de las funciones
+# Declaración y diseño de las funciones de las operaciones.
 def menu():
     print()
     print("Menú de operaciones")
@@ -14,6 +15,8 @@ def menu():
     print("[5]División entera")
     print("[6]Exponenciación")
     print("[0]Salir")
+    opcion = int(input("Opción: "))
+    return opcion
 
 def suma(a,b):
     return a+b
@@ -33,18 +36,14 @@ def division_Entera(a,b):
 def exponenciacion(a,b):
     return a**b
 
-#Programa pricipal
-
+#Código a nivel de módulo.
 print("*** Calculadora Básica ***")
 opcion=None
 while opcion!=0:
-    menu()
-    opcion=int(input("Opción: "))
-    if opcion==0:
-        print("Opción inválida", end="\n")
-        break
-    x=float(input("Ingrese el primer numero a operar: "))
-    y=float(input("Ingrese el segundo numero a operar:"))
+    opcion=menu()
+    if opcion>=1 and opcion<=6:
+        x=float(input("Ingrese el primer numero a operar: "))
+        y=float(input("Ingrese el segundo numero a operar: "))
     if opcion==1:
         print("El resultado es",suma(x,y))
     elif opcion==2:
@@ -57,6 +56,9 @@ while opcion!=0:
         print("El resultado es",division_Entera(x,y))
     elif opcion==6:
         print("El resultado es",exponenciacion(x,y))
-
+    elif opcion>6:
+        print("Opción inválida")
+    else:
+        print("Ciclo terminado")
     print("*************************************")
 print("Fin del programa")
