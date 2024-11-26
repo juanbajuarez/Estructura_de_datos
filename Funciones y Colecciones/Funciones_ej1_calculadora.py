@@ -4,7 +4,7 @@
 # While para implementar una calculadora.
 
 
-# Declaracion y diseño de las funciones de las operaciones
+# Declaracion y diseño de las funciones de las operaciones.
 def menu():
     print()
     print("Menú de operaciones")

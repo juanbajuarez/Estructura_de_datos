@@ -5,28 +5,28 @@
 # mediante funciones.
 
 def forma1(tamanio):
-    # Pirámide creciente
+    # Pirámide creciente.
     print("Forma 1")
     for i in range(1, tamanio + 1):
         print("* " * i)
     print("*************************")
 
 def forma2(tamanio):
-    # Pirámide decreciente
+    # Pirámide decreciente.
     print("Forma 2")
     for i in range(tamanio, 0, -1):
         print("* " * i)
     print("*************************")
 
 def forma3(tamanio):
-    # Pirámide centrada
+    # Pirámide centrada.
     print("Forma 3")
     for i in range(1, tamanio + 1):
         print(" " * (tamanio - i) + "* " * i)
     print("*************************")
 
 def forma4(tamanio):
-    # Pirámide alineada a la derecha
+    # Pirámide alineada a la derecha.
     print("Forma 4")
     for i in range(1, tamanio + 1):
         print("  " * (tamanio - i) + "* " * i)
