@@ -36,7 +36,7 @@ def forma4(tamanio):
 print("Programa que imprime piramides con asteriscos (*)")
 tamanios=int(input("Ingrese el tamaño de la piramide: "))
 
-#Llamada a las funciones, con el tamaño como argumento
+#Llamada a las funciones, con el tamaño como argumento.
 forma1(tamanios)
 forma2(tamanios)
 forma3(tamanios)
