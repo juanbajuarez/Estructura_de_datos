@@ -56,6 +56,8 @@ while opcion!=0:
         exponenciacion = numero1 ** numero2
         print(f"La exponenciación es: {exponenciacion:.2f}")
     #Si se ingresa cualquier otro número se considera inválido.
+    elif opcion==0:
+        print("Ciclo terminado")
     else:
         print("Opción inválida")
 print("Fin del programa.")
