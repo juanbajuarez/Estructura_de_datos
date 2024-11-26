@@ -1,6 +1,6 @@
 # Autor: Juan Bautista Juárez
 # Fecha: Noviembre de 2024
-# Descripción: Programa en Python que utiliza el ciclo while y for
+# Descripción: Programa en Python que utiliza el ciclo for
 # para visualizar distintas formas de pirámides formadas por *.
 
 print("Programa que imprime pirámides con asteriscos (*)")
