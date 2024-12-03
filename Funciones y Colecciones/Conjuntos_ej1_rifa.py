@@ -1,28 +1,14 @@
-"""
-1) Ver correos de participantes.
-
-2) Agregar correo de participante.
-
-3) Eliminar correo de participante.
-
-4) Seleccionar ganador.
-0) Salir
-
-"""
-import random
-
-
-# Autor: Juan Bautista Juárez
 # Fecha: Noviembre de 2024
 # Descripción: Programa en Python que utiliza funciones con listas
-# para implementar una lista de compras.
-
+# conjuntos y tuplas para implementar una rifa
+# Autor: Juan Bautista Juárez
+import random
 #Función que muestra el menú
 def menu():
     print("[1] Ver lista")
     print("[2] Añadir participante")
     print("[3] Eliminar participante")
-    print("[4] Seleccionar gandador")
+    print("[4] Seleccionar ganador")
     print("[0] Salir")
     opcion = int(input("Indique qué acción desea realizar: "))
     return opcion
@@ -58,7 +44,7 @@ def ganador(participantes):
     participantes_sinrepetir=set(participantes)
     ganador=list(participantes_sinrepetir)
     gandor1 = random.choice(ganador)
-    print(gandor1)
+    print("El ganador de la rifa es: ",gandor1," ¡Felicidades!")
 
 #Código a nivel de módulo.
 print("*** Lista de participantes ***")
