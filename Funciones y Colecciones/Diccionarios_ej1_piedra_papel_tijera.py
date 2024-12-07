@@ -19,7 +19,7 @@ def jugador(opcion):
     return eleccion_usuario, eleccion_cpu
 
 
-# Función del menu
+# Función del menú.
 def menu():
     print("1) PIEDRA")
     print("2) PAPEL")
