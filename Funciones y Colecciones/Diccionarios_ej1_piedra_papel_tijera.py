@@ -25,7 +25,7 @@ def menu():
     print("2) PAPEL")
     print("3) TIJERAS")
     print("0) SALIR")
-    opcion = int(input("Ingrese su opcion: "))
+    opcion = int(input("Ingrese su opciÓn: "))
     return opcion
 
 
