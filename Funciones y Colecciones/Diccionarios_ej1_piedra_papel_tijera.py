@@ -25,7 +25,7 @@ def menu():
     print("2) PAPEL")
     print("3) TIJERAS")
     print("0) SALIR")
-    opcion = int(input("Ingrese su opciÓn: "))
+    opcion = int(input("Ingrese su opción: "))
     return opcion
 
 
@@ -41,24 +41,25 @@ while opcion != 0:
         print("Programa terminado")
         break
     else:
-        diccionario = jugador(opcion)
+        seleccion = jugador(opcion)
         print()
+        #Declaración del diccionario.
         piedra_papel_tijera = {('PIEDRA', 'TIJERAS'): "JUGADOR", ('PIEDRA', 'PAPEL'): "CPU",
                                ('TIJERAS', 'PAPEL'): "JUGADOR", ('TIJERAS', 'PIEDRA'): "CPU",
                                ('PAPEL', 'PIEDRA'): "JUGADOR", ('PAPEL', 'TIJERAS'): "CPU", }
 
         # Lógica para determinar al ganador.
-        resultado = piedra_papel_tijera.get(diccionario)
+        resultado = piedra_papel_tijera.get(seleccion)
         if resultado == "JUGADOR":
-            print(f"Jugador: {diccionario[0]}. CPU: {diccionario[1]}. "
+            print(f"Jugador: {seleccion[0]}. CPU: {seleccion[1]}. "
                   f"El resultado es: Gana del Jugador.")
             jugador_v += 1
         elif resultado == "CPU":
-            print(f"Jugador: {diccionario[0]}. CPU: {diccionario[1]}. "
+            print(f"Jugador: {seleccion[0]}. CPU: {seleccion[1]}. "
                   f"El resultado es: Gana la CPU.")
             cpu += 1
         else:
-            print(f"Jugador: {diccionario[0]}. CPU: {diccionario[1]}. "
+            print(f"Jugador: {seleccion[0]}. CPU: {seleccion[1]}. "
                   f"El resultado es: Empate.")
             empate += 1
 
