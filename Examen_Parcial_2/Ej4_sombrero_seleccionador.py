@@ -12,18 +12,54 @@ def menu():
 
 #Función que realiza el test
 def prueba (preguntas):
-    val=None
-    casas = [("Gryffindor",0) ,("Slytherin",0), ("Hufflepuff",0),("Ravenclaw",0)]
-    while val> 4:
+        c_mayor=[]
+        casas_tupla = {"Gryffindor": 0, "Slytherin": 0, "Hufflepuff": 0, "Ravenclaw": 0}
+        casas_diccionario=dict(casas_tupla)
         for pregunta in preguntas:
             print(f"\n{pregunta[0]}")
             respuestas = pregunta[1:]
             for i, respuesta in enumerate(respuestas, 1):
                 print(f"{i}) {respuesta[1]}")
-            val = int(input("Selecciona tu respuesta"))
-                if respuestas>4:
-                    print()
+            validacion = True
+            while validacion:
+                val = int(input("Elige tu respuesta (1-4): "))
+                if val > 4 or val < 1:
+                    print("Númereo inválido.")
+                    print(f"\n{pregunta[0]}")
+                    respuestas = pregunta[1:]
+                    for i, respuesta in enumerate(respuestas, 1):
+                        print(f"{i}) {respuesta[1]}")
+                else:
+                    validacion=False
+            #Incremeto a las casas según selección.
+            num_casa = respuestas[val - 1][0]
+            if num_casa == 0:
+                casas_diccionario["Gryffindor"] += 1
+            elif num_casa == 1:
+                casas_diccionario["Slytherin"] += 1
+            elif num_casa == 2:
+                casas_diccionario["Hufflepuff"] += 1
+            elif num_casa == 3:
+                casas_diccionario["Ravenclaw"] += 1
+        #La función max() en Python se utiliza para encontrar el valor máximo en
+        # un diccionario, en una lista o en una tupla :
+        # sintaxis max(iterable, key=function)
+        c_mayor = max(casas_diccionario, key=casas_diccionario.get)
+        cmayor=list(c_mayor)
+        casas_lista = list(casas_diccionario.items())
+        return  c_mayor
 
+def preguntas_conjuntos(preguntas):
+
+    preguntas_mezcladas = []
+    for pregunta in preguntas:
+
+        enunciado = pregunta[0]
+        respuestas = pregunta[1:]
+        respuestas_mezcladas = list(set(respuestas))
+        pregunta_mezclada = [enunciado] + respuestas_mezcladas
+        preguntas_mezcladas.append(pregunta_mezclada)
+    return preguntas_mezcladas
 
 # Código a nivel de módulo.
 opcion = None
@@ -44,7 +80,7 @@ preguntas = [
 while opcion != 0:
     opcion = menu()
     if opcion==1:
-        prueba(preguntas)
+        print("Tu casa es:",prueba(preguntas))
     elif opcion>1 or opcion<0:
         print("Opción no válida.")
     else:
