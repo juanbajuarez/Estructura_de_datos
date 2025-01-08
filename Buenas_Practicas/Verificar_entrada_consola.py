@@ -1,6 +1,7 @@
 # Autor: Juan Bautista Juárez
 # Fecha: Enero de 2024
-# Descripción: Buenas practicas
+# Descripción: Buenas prácticas
+# Validación de datos de entrada por teclado.
 
 
 #prueba_numero=int(input("Ingrese un numero "))
