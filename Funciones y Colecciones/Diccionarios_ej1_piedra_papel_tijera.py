@@ -8,14 +8,14 @@ Por clave-valor
 Ejemplos de usos
 nombre_diciionarios={'key':"valor",'key2':"valor2"}
 """
-from numpy.random import choice
+from random import choice
 
 
 # Función que asigna los valores del jugador y la CPU.
 def jugador(opcion):
     opciones = ["PIEDRA", "PAPEL", "TIJERAS"]
     eleccion_usuario = opciones[opcion - 1]
-    eleccion_cpu = choice(["PIEDRA", "PAPEL", "TIJERAS"])
+    eleccion_cpu = random.choice(["PIEDRA", "PAPEL", "TIJERAS"])
     return eleccion_usuario, eleccion_cpu
 
 

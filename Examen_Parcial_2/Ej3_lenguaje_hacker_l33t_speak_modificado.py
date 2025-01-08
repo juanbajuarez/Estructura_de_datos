@@ -1,6 +1,6 @@
 # Autor: Juan Bautista Juárez
 # Fecha: Diciembre de 2024
-# Descripción: Exámen ejercicio número 3 "Lenguaje hacker (l33t sp34k)".
+# Descripción: Exámen ejercicio número 3 "Lenguaje hacker (l33t sp34k)" modificado.
 
 """
 Por clave-valor
@@ -22,7 +22,8 @@ def menu():
 def vocales(caracter):
     l33t=caracter
     vocales={('A', 'a'): "4",('E', 'e'): "3",('I', 'i'): "1",('O', 'o'): "0",
-             ('U', 'u'): "(_)",}
+             ('U', 'u'): "(_)",'1': "L",'2': "R",'3': "E",'4': "A",'5': "S",
+             '6': "b",'7': "T",'8': "B",'9': "g",'0': "o"}
 
     for clave, valor in vocales.items():
         if l33t in clave:
@@ -30,14 +31,16 @@ def vocales(caracter):
     return l33t
 
 #Función utilizando diccionario para obtener den valor l33t de las consonates.
-def consonates(caracter):
+def consonantes(caracter):
     l33t = caracter
-    consonates={('B', 'b'): "I3",('C', 'c'): "[", ('D', 'd'): ")",  ('F', 'f'): "|=",
+    consonates={('A', 'a'): "4",('E', 'e'): "3",('I', 'i'): "1",('O', 'o'): "0",
+             ('U', 'u'): "(_)",('B', 'b'): "I3",('C', 'c'): "[", ('D', 'd'): ")",  ('F', 'f'): "|=",
                 ('G', 'g'): "&", ('H', 'h'): "#", ('J', 'j'): ",_|", ('K', 'k'): ">|",
                 ('L', 'l'): "1", ('M', 'm'): "(V)", ('N', 'n'): "^/",
                 ('P', 'p'): "|*", ('Q', 'q'): "(_,)", ('R', 'r'): "I2", ('S', 's'): "5",
                 ('T', 't'): "7", ('V', 'v'): "|/", ('W', 'w'): "uu",
-                ('X', 'x'): "><", ('Y', 'y'): "`/", ('Z', 'z'): "2"}
+                ('X', 'x'): "><", ('Y', 'y'): "`/", ('Z', 'z'): "2",'1': "L",'2': "R",'3': "E",'4': "A",'5': "S",
+             '6': "b",'7': "T",'8': "B",'9': "g",'0': "o"}
     for clave, valor in consonates.items():
         if l33t in clave:
             l33t=valor
@@ -69,10 +72,7 @@ def intermedio(palabra):
         lista_palabra.append(palabra[i])
     #Cambia vocales.
     for i in range(0,tam):
-        lista_palabra2.append(vocales(lista_palabra[i]))
-    #Cambia consonantes.
-    for i in range(0, tam):
-        l33t.append(consonates(lista_palabra2[i]))
+        l33t.append(consonantes(lista_palabra[i]))
     for i in range(0, tam):
         print(l33t[i],end='')
     print()

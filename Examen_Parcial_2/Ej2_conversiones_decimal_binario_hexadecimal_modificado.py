@@ -1,6 +1,6 @@
 # Autor: Juan Bautista Juárez
 # Fecha: Diciembre de 2024
-# Descripción: Exámen ejercicio número 2 "Convesiones".
+# Descripción: Exámen ejercicio número 2 "Convesiones" modificado.
 
 #Función del menú.
 def menu():
@@ -8,6 +8,7 @@ def menu():
     print("1) Convertir de decimal a binario y hexadecimal.")
     print("2) Convertir de binario a decimal y hexadecimal.")
     print("3) Convertir de hexadecimal a decimal y binario.")
+    print("4) Suma de números binarios.")
     print("0) Salir.")
     opcion=int(input("Ingresa una de las opciones: "))
     return opcion
@@ -54,6 +55,7 @@ def decimal_hexadecimal(numero):
         valexa = cal_hexadecimal(residuo)
         numero = numero // 16
         hexadecimal.append(valexa)
+    hexadecimal.append("0x")
     hexadecimal.reverse()
     return hexadecimal
 
@@ -66,6 +68,7 @@ def decimal_binario(numero):
         residuo=num1%2
         num1=num1//2
         binario.append(residuo)
+    binario.append("0b")
     binario.reverse()
     return binario
 
@@ -108,6 +111,54 @@ def hexadecimal_decimal_y_binario(numero):
     #El valor binario se realiza por función.
     return valor_decimal,decimal_binario(acum)
 
+#Función que suma dos numeros binarios.
+def suma_binarios(num1,num2):
+    primer_binario=[]
+    segundo_binario=[]
+    for num in num1:
+        primer_binario.append(int(num*1))
+    for num in num2:
+        segundo_binario.append(int(num*1))
+    print(primer_binario)
+    print(segundo_binario)
+    tam = len(primer_binario)
+    tam2=len(segundo_binario)
+    resultado=[]
+    if tam>tam2:
+        mayor=tam
+    else:
+        mayor=tam2
+    acarreo=0
+    for i in range(0,mayor):
+        if primer_binario[mayor - 1-i]==1 and segundo_binario[mayor - 1-i]==1 and acarreo==0:
+            acarreo=1
+            resultado.append(1)
+        elif primer_binario[mayor - 1-i ] == 1 and segundo_binario[mayor - 1 -i] ==1  and acarreo ==1 :
+            acarreo=1
+            resultado.append(1)
+        elif primer_binario[mayor - 1 -i]==1 and segundo_binario[mayor - 1-i ]==0 and acarreo==0:
+            acarreo=0
+            resultado.append(1)
+        elif primer_binario[mayor - 1-i] == 1 and segundo_binario[mayor - 1-i] ==0 and acarreo == 1:
+            acarreo=1
+            resultado.append(0)
+        elif num1[mayor - 1 -i] == 0 and segundo_binario[mayor - 1-i ] == 1 and acarreo == 0:
+            acarreo=0
+            resultado.append(1)
+        elif num1[mayor - 1 -i] == 0 and segundo_binario[mayor - 1-i ] == 1 and acarreo == 1:
+            acarreo=1
+            resultado.append(0)
+        elif num1[mayor - 1-i ] == 0 and segundo_binario[mayor - 1-i ] == 0 and acarreo == 0:
+            acarreo=0
+            resultado.append(0)
+        elif num1[mayor - 1-i ] == 0 and segundo_binario[mayor - 1 -i] == 0 and acarreo == 1:
+            acarreo=0
+            resultado.append(1)
+    resultado.reverse()
+    print(resultado)
+    return resultado
+
+
 # Código a nivel de módulo.
 opcion = None
 while opcion != 0:
@@ -130,10 +181,13 @@ while opcion != 0:
         decimal = ''.join(map(str, tupla[0]))
         binario = ''.join(map(str, tupla[1]))
         print(f"El número hexadecimal {numero} es {decimal} en decimal y {binario} en binario.")
-    elif opcion<0 or opcion>3:
+    elif opcion == 4:
+        numero = input("Ingrese el primer número binario : ")
+        numero2 = input("Ingrese el primer número binario: ")
+        print("EL resultado de la suma binaria es: ",suma_binarios(numero,numero2))
+    elif opcion<0 or opcion>4:
         print("Opción no válida.")
     else:
         print("Programa Terminado")
     print()
     print("************************************************************************")
-
