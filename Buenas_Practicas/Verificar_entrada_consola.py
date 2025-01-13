@@ -12,7 +12,7 @@ cadena=input("Ingrese una cadena: ").strip()
 print(cadena.isnumeric())
 print(cadena.isalpha())
 print(cadena.isalnum())
-
+"""
 
 numero=input("Ingresa una cadena: ")
 while not numero.isnumeric():
@@ -21,7 +21,6 @@ while not numero.isnumeric():
 print()
 numero=int(numero)
 print(f"EL número {numero} es de tipo {type(numero)}")
-"""
 
 def cadena_a_flotante(cadena):
     no_guiones=cadena.count("-")
