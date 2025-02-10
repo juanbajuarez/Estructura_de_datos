@@ -27,7 +27,7 @@ def modos_juego()->int:
     while not (opcion.isnumeric() and 0 <= int(opcion) <= 2):
         print("Opción no válida")
         print("***************************")
-        print("Modo de juego:")
+        print("Modo de juego: ")
         print("1) Usuario vs Usuarios")
         print("2) Usuario vs CPU")
         print("0) Salir")
