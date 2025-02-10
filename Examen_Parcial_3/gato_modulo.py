@@ -1,9 +1,5 @@
-import time
-import sys
-from termcolor import colored
+import random
 def juego_del_gato()->None:
-    from gato_modulo import usuario_vs_usuario, usuario_vs_cpu
-    from gato_modulo import modos_juego
     modo=modos_juego()
     if modo==1:
         usuario_vs_usuario()
@@ -11,8 +7,7 @@ def juego_del_gato()->None:
         usuario_vs_cpu()
     else:
         print("Saliendo del juego")
-print()
-
+    print()
 
 def modos_juego()->int:
     """
@@ -120,7 +115,6 @@ def usuario_vs_usuario()->None:
             print("Empate")
 
 def usuario_vs_cpu()->None:
-    import random
 
     tablero = [
         [" ", " ", " "],
@@ -220,27 +214,4 @@ def usuario_vs_cpu()->None:
         elif turnos_totales == 9:
             print("Empate")
 
-def imprimir_titulo_gato()->None:
-    """
-    Función para imprimir el título del juego del gato.
-    """
-    dibujo = f"""
-    {colored('GGGGG  AAAAA   TTTTT   OOOOO', 'red')}
-    {colored('G      A   A     T    O     O', 'cyan')}
-    {colored('G  GG  AAAAA     T    O     O', 'yellow')}
-    {colored('G   G  A   A     T    O     O', 'blue')}
-    {colored('GGGGG  A   A     T     OOOOO', 'red')}
-    """
-    sprint(dibujo,0.01)
-
-def sprint(text:str, second:float)->None:
-    """
-    :param text:El título de juego a desplegar.
-    :param second: El tiempo de retardo entre cada carácter.
-    :return: No retorna ningún valor.
-    """
-    for line in text:
-        sys.stdout.write(line)
-        sys.stdout.flush()
-        time.sleep(second)
-
+juego_del_gato()
